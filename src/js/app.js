@@ -12,7 +12,7 @@ var main = new UI.Menu({
     color: 'white',
     backgroundColor: 'black'
   },
-  highlightBackgroundColor: Feature.color('#00AAFF', 'white'),
+  highlightBackgroundColor: Feature.color('#00AAFF', 'black'),
   highlightTextColor: 'white',
     sections: [{
       title: 'Ravintolat',
