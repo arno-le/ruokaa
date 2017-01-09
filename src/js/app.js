@@ -131,12 +131,13 @@ main.on('select', function(e) {
         print = print + temp2[0] + "\n";
       }
     }
+    reaktori.title("Reaktori");
     reaktori.body(print);
     
   },
   function(error) {
     console.log('Ajax failed: ' + error);
-    reaktori.title("Reaktori");
+    reaktori.title("Tapahtui virhe:");
     reaktori.body('Yhteydessä on nyt jotain häikkää.');
   });
 
@@ -163,12 +164,12 @@ main.on('select', function(e) {
     if(json.courses[1].category === "Inspiring") {
       print = print +  "Ruoka 2: \n" + json.courses[1].title_fi + "\n" +  json.courses[1].desc_fi + "\n";
     }
-    
+    hertsi.title("Hertsi");
     hertsi.body(print);    
   },
   function(error) {
     console.log('Ajax failed: ' + error);
-    hertsi.title("Hertsi");
+    hertsi.title("Tapahtui virhe:");
     hertsi.body('Yhteydessä on nyt jotain häikkää.');
   });
 
@@ -209,11 +210,12 @@ Date.prototype.getWeekNumber = function(){
       print = print + json.d.MealOptions[x].MenuItems[i].Name + "\n";
     }
   } 
+    newton.title("Newton");
     newton.body(print);
   },
   function(error) {
     console.log('Ajax failed: ' + error);
-    newton.title("Newton");
+    newton.title("Tapahtui virhe:");
     newton.body('Yhteydessä on nyt jotain häikkää.');
   });
 
